@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<include>
+  <caption size="-2,-2" layout="vbox">
+    <caption size="-2,186" layout="vbox" gravity="center" interval="30" padding="0,20,0,0">
+      <img skin="img_uninstalling"/>
+      <text text="@string/uninstalling" font="size:18" colorText="@color/white"/>
+    </caption>
+    <window size="-2,-1" layout="vbox" padding="30,0,30,0" extend_top="70">
+      <text text="@string/uninstalling" colorText="@color/gray_title"/>
+      <progress name="pg_unstalling" size="-2,-1" showPercent="0"/>
+    </window>
+  </caption>
+</include>

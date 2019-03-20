@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<include>
+  <caption pos="0,0,-0,-0" layout="vbox" gravity="center">
+    <include src="layout:div_header"/>
+    <!--立即安装-->
+    <button.normal name="btn_install" size="240,34" text="@string/install" animate="1" font="size:18" extend_top="30"/>
+    
+    <caption name="div_change_folder" size="-1,-1" layout="hbox" visible="0" extend_top="20">
+    <!--pick folder-->
+      <edit name="edit_folder" size="300,-2" skin="frm_bg_dir" inset="10,0,0,10" readOnly="1"/>
+      <button name="btn_change_folder" skin="frm_btn_pick_folder" text="@string/change"  animate="1" drawFocusRect="0" colorText="@color/white"/>
+    </caption>
+    <window size="0,0" weight="1" visible="0"/>
+    <caption size="-2,-1" layout="hbox" extend_bottom="10">
+      <!--协议-->
+      <check name="chk_agreement" skin="img_check_agree" text="@string/agreement_check" focusSkin="" drawFocusRect="0"/>
+      <link.web name="link_agreement" cursor="hand" text="@string/agreement" extend_left="9"/>
+
+      <window size="0,0" weight="1" visible="0"/>
+      <check name="chk_custom" skin="img_check_custom" text="@string/custom_install"  focusSkin="" drawFocusRect="0"  colorText="@color/theme"/>
+    </caption>
+  </caption>
+</include>

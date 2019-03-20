@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<include>
+  <caption size="-2,-2" layout="vbox" gravity="center">
+    <caption size="-2,186" layout="vbox" gravity="center" interval="30" padding="0,20,0,0">
+      <img skin="img_uninstall"/>
+      <text text="@string/uninstall_title" font="size:18" colorText="@color/white"/>
+    </caption>
+    <edit name="edit_unstallchoose_url" visible="0" display="0" readonly="1"/>
+
+    <check  name="chk_unstallchoose_delete" skin="img_check_agree" checked="1" text="@string/keep_data" extend_top="60"/>
+
+    <caption size="-1,-1" layout="hbox" interval="50" extend_top="25">
+      <button.normal name="btn_unstallchoose_unnstall" text="@string/uninstall" />
+      <button.normal name="btn_unstallchoose_previous" text="@string/cancel"/>
+    </caption>
+  </caption>
+</include>

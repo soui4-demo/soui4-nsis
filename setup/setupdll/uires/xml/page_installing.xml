@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<include>
+  <caption pos="0,0,-0,-0" layout="vbox">
+    <include src="layout:div_header"/>
+    <tabctrl name="tab_installing"
+             size="-2,70"
+             visible="0"
+             tabAlign="bottom"
+             tabSkin="img_setup_tab"
+             tabInterSize="5"
+             tabWidth="14" tabHeight="14" tabPos="200,|0"
+             curSel="0" focusable="0" animateSteps="10"  animate="1" >
+      <page title="">
+        <img name="img_setup1" skin="img_setup1" pos="|0,|-10" offset="-0.5,-0.5" animate="1" />
+      </page>
+      <page title="">
+        <img name="img_setup2" skin="img_setup2" pos="|0,|-10" offset="-0.5,-0.5" animate="1" />
+      </page>
+      <page title="">
+        <img name="img_setup3" skin="img_setup3" pos="|0,|-10" offset="-0.5,-0.5" animate="1" />
+      </page>
+      <page title="">
+        <img name="img_setup4" skin="img_setup4" pos="|0,|-10" offset="-0.5,-0.5" animate="1" />
+      </page>
+    </tabctrl>
+    <window size="-2,-1" layout="vbox" padding="30,0,30,0">
+      <text text="@string/installing" colorText="@color/gray_title"/>
+      <progress name="pg_installing" size="-2,-1" showPercent="0"/>
+    </window>
+  </caption>
+</include>

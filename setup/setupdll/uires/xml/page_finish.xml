@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<include>
+  <caption pos="0,0,-0,-0" layout="vbox" gravity="center">
+    <include src="layout:div_header"/>
+    <caption size="-1,-1" interval="30" layout="hbox" extend_top="70">
+      <button.normal name="btn_open" text="@string/open"  animate="1" font="size:18"/>
+      <button.normal name="btn_finish" text="@string/finish"  animate="1" font="size:18"/>
+    </caption>
+  </caption>
+</include>

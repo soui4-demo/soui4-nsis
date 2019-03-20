@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIDEF>
+  <font face="微软雅黑" size="14"/>
+
+  <color>
+    <white value="#fefefe"/>
+    <theme value="#fec615"/>
+    <gray_title value="#333333"/>
+  </color>
+  <string>
+    <!--需要修改的-->
+    <title value="title"/>
+    <ver value="1.0"/>
+    <slogon value="make fans together, effective run and private custom"/>
+    <install value="install"/>
+    <agreement_check value="I have read and agree to"/>
+    <agreement value="The software license agreement"/>
+    <change value="change"/>
+    <custom_install value="custom"/>
+    <open value="open"/>
+    <finish value="finish"/>
+    <sure value="sure"/>
+    <installing value="installing"/>
+    <uninstall value="uninstall"/>
+    <uninstall_title value="Uninstall Yourong Now?"/>
+    <ok value="ok"/>
+    <cancel value="cancel"/>
+    <keep_data value="keep data"/>
+    <uninstall_finish value="uninstall finish"/>
+    <uninstalling value="uninstalling"/>
+    <quit_uninstall value="quit uninstall?"/>
+    <quit_install value="quit install?"/>
+  </string>
+
+  <skin>
+    <imglist name="img_logo" src="img:png_logo"/>
+    <imglist name="img_logo2" src="img:png_logo2"/>
+    <imgframe name="frm_bg" src="img:png_bg" margin="10,10,10,10"/>
+    <imgframe name="frm_bg_dir" src="img:png_bg_dir" margin="15,0,0,0"/>
+    <imglist name="img_welcome" src="img:png_welcome"/>
+
+    <imglist name="img_btn_close" src="img:png_btn_close" states="3"/>
+    <imglist name="img_btn_minimize" src="img:png_btn_minimize" states="3"/>
+    <imgframe name="frm_btn_hollow" src="img:png_btn_hollow" states="3" margin="25,5,25,5"/>
+    <imgframe name="frm_btn_normal" src="img:png_btn_normal" states="4" margin="25,5,25,5"/>
+    <imgframe name="frm_btn_pick_folder" src="img:png_btn_pick_folder" states="3" margin="5,5,15,5"/>
+    <imglist name="img_check_agree" src="img:png_check_agree" states="8"/>
+    <imglist name="img_check_custom" src="img:png_check_custom" states="8"/>
+
+    <imgframe name="prog_bar" src="img:prog_bar" margin="10,1,10,1"/>
+    <imgframe name="prog_bkgnd" src="img:prog_bkgnd" margin="10,1,10,1"/>
+
+    <imglist name="img_setup1" src="img:setup1"/>
+    <imglist name="img_setup2" src="img:setup2"/>
+    <imglist name="img_setup3" src="img:setup3"/>
+    <imglist name="img_setup4" src="img:setup4"/>
+    <imglist name="img_setup_tab" src="img:setup_tab" states="4"/>
+    <scrollbar name="skin_scrollbar" src="img:png_scroll" margin="3,3,3,3"/>
+
+    <imglist name="img_uninstall" src="img:png_uninstall"/>
+    <imglist name="img_uninstalling" src="img:png_uninstalling"/>
+    <imglist name="img_uninstalled" src="img:png_uninstalled"/>
+  </skin>
+
+  <style>
+    <button.ok skin="frm_btn_hollow" paddings="10,5,10,5" drawFocusRect="0" colorText="@color/theme"/>
+    <button.normal skin="frm_btn_normal" paddings="10,5,10,5" drawFocusRect="0" colorText="@color/white"/>
+    <link.web  cursor="hand" colorText="@color/theme" fontHover="underline:1" />
+  </style>
+
+  <objattr>
+    <progress  bkgndSkin="prog_bkgnd" posSkin="prog_bar" value="20" min="0" max="100"/>
+  </objattr>
+</UIDEF>

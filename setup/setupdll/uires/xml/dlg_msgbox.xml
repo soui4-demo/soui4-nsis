@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SOUI name="message" title="message" bigIcon="LOGO:32" smallIcon="LOGO:16" width="-1" height="-1"  resizable="0"
+toolWindow="0"
+translucent="1"
+appWnd="1"
+trCtx="message">
+  <root size="-1,-1" layout="vbox">
+    <caption skin="frm_bg" size="-1,-1" layout="vbox" padding="80,30,80,30" interval="40">
+      <caption size="-1,-1" layout="hbox" interval="20" gravity="center">
+        <img skin="img_logo2"/>
+        <text name="txt_msg" font="size:18" colorText="@color/gray_title"/>
+      </caption>
+      <caption size="-1,-1" layout="hbox" interval="46">
+        <button.ok id="IDOK" text="@string/ok"  size="100,30"/>
+        <button.normal id="IDCANCEL" text="@string/cancel"  size="100,30"/>
+      </caption>
+    </caption>
+  </root>
+</SOUI>

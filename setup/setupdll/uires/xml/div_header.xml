@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<include>
+  <window size="-2,186" layout="vbox" gravity="center" padding="0,40,0,0" interval="30">
+    <img skin="img_logo"/>
+    <text text="@string/slogon" colorText="@color/white" font="size:22"/>
+  </window>
+</include>

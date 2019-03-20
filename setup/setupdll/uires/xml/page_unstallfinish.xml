@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<include>
+  <caption size="-2,-2" layout="vbox" gravity="center">
+    <caption size="-2,186" layout="vbox" gravity="center" interval="30" padding="0,20,0,0">
+      <img skin="img_uninstalled"/>
+      <text text="@string/uninstall_finish" font="size:18" colorText="@color/white"/>
+    </caption>
+    <button.normal name="btn_unstallfinish"  animate="1"  text="@string/sure" extend_top="70"/>
+  </caption>
+</include>

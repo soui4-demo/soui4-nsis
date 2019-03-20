@@ -1,0 +1,39 @@
+﻿<SOUI name="mainWindow" title="@string/titlever" bigIcon="LOGO:32" smallIcon="LOGO:16" width="568" height="403"  resizable="0"
+toolWindow="0"
+translucent="1"
+appWnd="1"
+trCtx="mainWindow">
+  <root skin="frm_bg" cache="1" padding="5,5,5,5">
+    <window pos="0,0,-0,216" skin="img_welcome"/>
+    <caption pos="0,0,-0,30" layout="hbox">
+      <window size="0,0" weight="1" visible="0"/>
+      <imgbtn name="btn_min" skin="img_btn_minimize" tip="minimize" animate="1" />
+      <imgbtn name="btn_close" skin="img_btn_close"  tip="close" animate="1"/>
+    </caption>
+    <caption pos="5,[0,-5,-5">
+      <tabctrl name="tab_main" pos="0,0,-0,-0" show="1" curSel="0" focusable="0" animateSteps="0" tabHeight="0" animate="1" >
+        <page title="welcome">
+          <include src="LAYOUT:XML_WELCOME"/>
+        </page>
+        <page title="agreement">
+          <include src="LAYOUT:XML_AGREEMENT"/>
+        </page>
+        <page title="installing">
+          <include src="LAYOUT:XML_INSTALLING"/>
+        </page>
+        <page title="finish">
+          <include src="LAYOUT:XML_FINISH"/>
+        </page>
+        <page title="unstallchoose">
+          <include src="LAYOUT:XML_UNSTALLCHOOSE"/>
+        </page>
+        <page title="unstalling">
+          <include src="LAYOUT:XML_UNSTALLING"/>
+        </page>
+        <page title="unstallfinish">
+          <include src="LAYOUT:XML_UNSTALLFINISH"/>
+        </page>
+      </tabctrl>
+    </caption>
+  </root>
+</SOUI>
