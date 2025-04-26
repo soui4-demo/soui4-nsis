@@ -161,12 +161,8 @@ NSISAPI  InitWindow(HWND hwndParent, int string_size, char *variables, stack_t *
                 }
             }
 
-            //改变msgbox样式 byJoe
-            SXmlDoc xmlDoc;
-			if (LOADXML(xmlDoc, L"XML_MSGBOX:LAYOUT"))
-            {
-                SetMsgTemplate(xmlDoc.root().child(L"SOUI"));
-            }
+			//改变msgbox样式 byJoe
+			theApp->SetMessageBoxTemplateResId(_T("XML_MSGBOX:LAYOUT"));
 
             // BLOCK: Run application
             {

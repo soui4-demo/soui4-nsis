@@ -12,6 +12,11 @@
 #define  _CRT_SECURE_NO_WARNINGS
 
 #define	 DLL_SOUI
+
+//for link release lib
+#define DISABLE_SWNDSPY 1
+#define ENABLE_SOBJ_XML 0
+//#define 
 #include <souistd.h>
 #include <core/SHostDialog.h>
 #include <control/SMessageBox.h>

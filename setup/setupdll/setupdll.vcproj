@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;$(SOUI4LIB)\config&quot;;&quot;$(SOUI4LIB)\components&quot;;&quot;$(SOUI4LIB)\SOUI\include&quot;;&quot;$(SOUI4LIB)\utilities\include&quot;"
+				AdditionalIncludeDirectories="..\soui5_lib\include\stdint;..\soui5_lib\include\config;..\soui5_lib\include\components;..\soui5_lib\include\SOUI\include;..\soui5_lib\include\utilities\include"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;SETUPDLL_EXPORTS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -55,16 +55,16 @@
 			/>
 			<Tool
 				Name="VCResourceCompilerTool"
-				AdditionalIncludeDirectories="$(SOUI4LIB)\soui-sys-resource"
+				AdditionalIncludeDirectories="soui-sys-resource"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="soui4d.lib utilities4d.lib"
+				AdditionalDependencies="soui4.lib utilities4.lib"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="$(SOUI4LIB)\bin\"
+				AdditionalLibraryDirectories="..\soui5_lib\lib\Release\"
 				GenerateDebugInformation="true"
 				SubSystem="2"
 				TargetMachine="1"
@@ -119,7 +119,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="&quot;$(SOUI4LIB)\config&quot;;&quot;$(SOUI4LIB)\components&quot;;&quot;$(SOUI4LIB)\SOUI\include&quot;;&quot;$(SOUI4LIB)\utilities\include&quot;"
+				AdditionalIncludeDirectories="..\soui5_lib\include\stdint;..\soui5_lib\include\config;..\soui5_lib\include\components;..\soui5_lib\include\SOUI\include;..\soui5_lib\include\utilities\include"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;SETUPDLL_EXPORTS"
 				RuntimeLibrary="0"
 				EnableFunctionLevelLinking="true"
@@ -132,7 +132,7 @@
 			/>
 			<Tool
 				Name="VCResourceCompilerTool"
-				AdditionalIncludeDirectories="$(SOUI4LIB)\soui-sys-resource"
+				AdditionalIncludeDirectories="soui-sys-resource"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -141,7 +141,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="utilities4.lib soui4.lib"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories="$(SOUI4LIB)\bin\"
+				AdditionalLibraryDirectories="..\soui5_lib\lib\Release\"
 				GenerateDebugInformation="true"
 				AssemblyDebug="1"
 				SubSystem="2"
@@ -500,7 +500,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Building SoUI Resource"
-						CommandLine="$(SOUI4LIB)\tools\uiresbuilder.exe -i $(InputPath) -p uires -r .\res\soui_res.rc2 -h .\res\resource.h idtable&#x0D;&#x0A;"
+						CommandLine="..\soui5_lib\tools\uiresbuilder.exe -i $(InputPath) -p uires -r .\res\soui_res.rc2 -h .\res\resource.h idtable&#x0D;&#x0A;"
 						Outputs=".\res\soui_res.rc2"
 					/>
 				</FileConfiguration>
@@ -510,7 +510,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Building SoUI Resource"
-						CommandLine="$(SOUI4LIB)\tools\uiresbuilder.exe -i $(InputPath) -p uires -r .\res\soui_res.rc2 -h .\res\resource.h idtable&#x0D;&#x0A;"
+						CommandLine="..\soui5_lib\tools\uiresbuilder.exe -i $(InputPath) -p uires -r .\res\soui_res.rc2 -h .\res\resource.h idtable&#x0D;&#x0A;"
 						Outputs=".\res\soui_res.rc2"
 					/>
 				</FileConfiguration>
